@@ -58,7 +58,7 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://forgeglobal.com/caastle_stock/
+  url: https://caastle.com
 x-coverage:
   state: none
   reason: defunct

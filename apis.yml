@@ -29,6 +29,19 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-09-03'
+  method: derived
+  source:
+  - {url: 'https://caastle.com', status: 301, note: 'declared website redirects to https://www.theorangemotel.com/ — a different registrable domain (caastle.com -> theorangemotel.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 specificationVersion: '0.23'
 created: '2026-08-08'
 modified: '2026-08-08'

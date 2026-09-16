@@ -1,18 +1,14 @@
 aid: caastle
 name: CaaStle
-description: >-
-  CaaStle Inc. was a New York based business-to-business "Clothing-as-a-Service"
-  company that built white-label clothing rental, subscription and resale
-  infrastructure for apparel retailers, operating tenant-branded storefronts and
-  reverse-logistics for partner brands rather than selling directly to consumers.
-  The company collapsed in 2025: its board confirmed financial distress and
-  furloughed staff in April 2025, and it filed for Chapter 7 bankruptcy in the
-  District of Delaware on 20 June 2025 (case 25-11187), electing liquidation over
-  reorganization. Founder and chief executive Christine Hunsicker resigned amid
-  allegations of fabricated financial disclosures and later pleaded guilty to a
-  fraud scheme prosecutors valued in the hundreds of millions of dollars. CaaStle
-  never operated a public developer program, and the caastle.com domain has since
-  passed out of the company's control.
+description: 'CaaStle Inc. was a New York based business-to-business "Clothing-as-a-Service" company that
+  built white-label clothing rental, subscription and resale infrastructure for apparel retailers, operating
+  tenant-branded storefronts and reverse-logistics for partner brands rather than selling directly to
+  consumers. The company collapsed in 2025: its board confirmed financial distress and furloughed staff
+  in April 2025, and it filed for Chapter 7 bankruptcy in the District of Delaware on 20 June 2025 (case
+  25-11187), electing liquidation over reorganization. Founder and chief executive Christine Hunsicker
+  resigned amid allegations of fabricated financial disclosures and later pleaded guilty to a fraud scheme
+  prosecutors valued in the hundreds of millions of dollars. CaaStle never operated a public developer
+  program, and the caastle.com domain has since passed out of the company''s control.'
 url: https://raw.githubusercontent.com/api-evangelist/caastle/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -37,14 +33,16 @@ accessModel:
   public: false
   label: Unknown
   confidence: low
-  source: []
+  source:
+  - url: https://caastle.com
+    status: 301
+    note: declared website redirects to https://www.theorangemotel.com/ — a different registrable domain
+      (caastle.com -> theorangemotel.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)
   generated: '2026-09-03'
   method: derived
-  source:
-  - {url: 'https://caastle.com', status: 301, note: 'declared website redirects to https://www.theorangemotel.com/ — a different registrable domain (caastle.com -> theorangemotel.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 specificationVersion: '0.23'
 created: '2026-08-08'
-modified: '2026-08-08'
+modified: '2026-09-15'
 tags:
 - Company
 - Retail
@@ -75,14 +73,11 @@ common:
 x-coverage:
   state: none
   reason: defunct
-  detail: >-
-    CaaStle filed Chapter 7 in June 2025 and liquidated; caastle.com no longer
-    belongs to the company and now 301s every path — /openapi.json, every
-    /.well-known/ path and a nonsense control path alike — to an unrelated
-    Indonesian-language site that answers 200 with one byte-identical HTML page,
-    none of the archived api-*.caastle.com tenant hosts still resolve in DNS, and
-    6,000 Wayback records for the domain contain no developer, docs, or
-    specification path.
+  detail: CaaStle filed Chapter 7 in June 2025 and liquidated; caastle.com no longer belongs to the company
+    and now 301s every path — /openapi.json, every /.well-known/ path and a nonsense control path alike
+    — to an unrelated Indonesian-language site that answers 200 with one byte-identical HTML page, none
+    of the archived api-*.caastle.com tenant hosts still resolve in DNS, and 6,000 Wayback records for
+    the domain contain no developer, docs, or specification path.
   evidence:
   - url: https://caastle.com/
     status: 301
@@ -98,3 +93,4 @@ x-enrichment:
   status: nochange
   artifacts_added: 0
   pass: local-v1
+x-status: defunct

@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/caastle/integrations
+- https://n8n.io/integrations/caastle/
+- https://composio.dev/toolkits/caastle
+- https://monid.ai/tools/caastle
+checked:
+- https://composio.dev/toolkits/caastle
+- https://monid.ai/tools/caastle
+- https://n8n.io/integrations/caastle/
+- https://zapier.com/apps/caastle/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
